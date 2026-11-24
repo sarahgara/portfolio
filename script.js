@@ -1,18 +1,46 @@
+
 const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".nav");
+const nav = document.querySelector(".nav");
+
+// Ouvrir et fermer le menu mobile
 
 menuButton.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-  menuButton.textContent = isOpen ? "×" : "☰";
+
+    const opened = nav.classList.toggle("open");
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        String(opened)
+    );
+
+    menuButton.innerHTML = opened
+        ? 'FERMER <span>×</span>'
+        : 'MENU <span>＋</span>';
+
 });
 
-document.querySelectorAll(".nav a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.textContent = "☰";
-  });
+
+// Fermer le menu après avoir choisi une section
+
+document.querySelectorAll(".nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuButton.innerHTML = 'MENU <span>＋</span>';
+
+    });
+
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+
+// Afficher automatiquement l'année actuelle
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
