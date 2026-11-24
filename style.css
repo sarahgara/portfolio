@@ -102,6 +102,13 @@ img {
     font-weight: 500;
 }
 
+.logo img {
+    height: 55px; /* Ajuste la taille */
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .nav {
     display: flex;
     gap: 42px;
