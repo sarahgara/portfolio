@@ -1,117 +1,448 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio créatif de stylisme et modélisme : collections, croquis, créations et savoir-faire.">
-  <title>Atelier Élise — Stylisme & Modélisme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Portfolio créatif de stylisme et modélisme.">
+
+  <title>STUDIO N°08 — Fashion Design</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="#accueil">ATELIER <span>ÉLISE</span></a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#collections">Collections</a>
-      <a href="#savoir-faire">Savoir-faire</a>
-      <a href="#contact" class="nav-contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="accueil">
-      <div class="hero-copy">
-        <p class="eyebrow">STYLISME · MODÉLISME · CRÉATION</p>
-        <h1>Donner forme<br>à <em>l’imagination.</em></h1>
-        <p class="hero-text">Des idées esquissées à la pièce confectionnée, chaque création raconte une histoire de matière, de mouvement et de personnalité.</p>
-        <a class="button" href="#collections">Découvrir les créations <span>↗</span></a>
-      </div>
-      <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Éditorial de mode, silhouette en tenue élégante">
-        <div class="image-note">COLLECTION — 2026</div>
-      </div>
-      <div class="hero-index">01 / 04</div>
-    </section>
+<div class="topline">
+  <span>PORTFOLIO CRÉATIF / 2026</span>
+  <span>STYLISME — MODÉLISME</span>
+  <span>DISPONIBLE POUR PROJETS <i></i></span>
+</div>
 
-    <section class="intro section" id="apropos">
-      <div class="section-label">01 — QUI SUIS-JE ?</div>
-      <div class="intro-content">
-        <p class="eyebrow">L’UNIVERS DE LA CRÉATION</p>
-        <h2>Entre sens du détail<br>et <em>liberté créative.</em></h2>
-        <p>Je suis <strong>Prénom Nom</strong>, styliste-modéliste passionné(e) par la création de vêtements et la recherche de nouvelles formes. J’imagine des silhouettes, développe des concepts et transforme les croquis en modèles concrets, en accordant une attention particulière aux coupes, aux matières et aux finitions.</p>
-        <a class="text-link" href="#contact">Parlons de votre projet <span>↗</span></a>
-      </div>
-    </section>
+<header class="header">
 
-    <section class="collections section" id="collections">
-      <div class="section-heading">
-        <div>
-          <div class="section-label">02 — SÉLECTION DE TRAVAUX</div>
-          <h2>Les <em>collections.</em></h2>
+  <a class="logo" href="#home">S<span>/</span>08</a>
+
+  <nav class="nav">
+    <a href="#about">MANIFESTE</a>
+    <a href="#work">SÉLECTION</a>
+    <a href="#process">PROCESSUS</a>
+    <a href="#contact">CONTACT ↗</a>
+  </nav>
+
+  <button class="menu-toggle"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false">
+    MENU <span>＋</span>
+  </button>
+
+</header>
+
+<main>
+
+  <!-- ACCUEIL -->
+
+  <section class="hero" id="home">
+
+    <div class="kicker">
+      <b>✳</b>
+      L'ART DE DONNER FORME AUX IDÉES
+    </div>
+
+    <div class="hero-title">
+
+      <h1>
+        FORM<br>
+        <em>FOLLOWS</em><br>
+        FEELING<span>.</span>
+      </h1>
+
+      <div class="stamp">
+        FASHION<br>
+        DESIGNER<br>
+        <small>PORTFOLIO 26</small>
+      </div>
+
+    </div>
+
+    <div class="hero-bottom">
+
+      <p>
+        Créer des vêtements, c'est raconter une histoire
+        <br>
+        à travers la matière, la coupe et le mouvement.
+      </p>
+
+      <a class="round" href="#work">↓</a>
+
+      <div class="hero-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=90"
+          alt="Éditorial de mode">
+
+        <small>FIG. 01 — SILHOUETTE STUDY</small>
+
+      </div>
+
+    </div>
+
+    <div class="vertical">
+      RECHERCHE / CRÉATION / CONSTRUCTION
+    </div>
+
+  </section>
+
+
+  <!-- À PROPOS -->
+
+  <section class="manifesto section" id="about">
+
+    <div class="index">
+      01 <span>— MANIFESTE</span>
+    </div>
+
+    <div class="manifesto-main">
+
+      <small class="red">À PROPOS DE MOI</small>
+
+      <h2>
+        Je transforme<br>
+        les idées en <em>silhouettes.</em>
+      </h2>
+
+      <div class="bio">
+
+        <p>
+          Je suis <strong>Prénom Nom</strong>, styliste-modéliste.
+          Mon univers explore l'équilibre entre lignes contemporaines,
+          matières expressives et détails inattendus.
+          De la première inspiration au prototype,
+          j'aime donner une identité forte à chaque création.
+        </p>
+
+        <div class="signature">
+          Prénom Nom
+          <small>STYLISTE / MODÉLISTE</small>
         </div>
-        <p>Une sélection de recherches, de silhouettes et de réalisations.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project project-large">
-          <div class="project-image"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1100&q=85" alt="Création de mode avec robe structurée"></div>
-          <div class="project-meta"><span>01 / COLLECTION</span><span>Élégance contemporaine</span></div>
-        </article>
-        <article class="project">
-          <div class="project-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Silhouette mode urbaine"></div>
-          <div class="project-meta"><span>02 / SILHOUETTES</span><span>Urban essentials</span></div>
-        </article>
-        <article class="project">
-          <div class="project-image"><img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=900&q=85" alt="Détail de vêtement et textile"></div>
-          <div class="project-meta"><span>03 / RECHERCHE</span><span>Matières & textures</span></div>
-        </article>
-      </div>
-      <p class="gallery-hint">Remplacez ces photos par vos propres créations, croquis et prototypes.</p>
-    </section>
 
-    <section class="craft section" id="savoir-faire">
-      <div class="craft-photo">
-        <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1100&q=85" alt="Atelier de création et travail manuel">
       </div>
-      <div class="craft-copy">
-        <div class="section-label">03 — SAVOIR-FAIRE</div>
-        <h2>De l’idée<br>à la <em>réalisation.</em></h2>
-        <p>Un processus créatif qui associe recherche artistique, précision technique et sensibilité textile.</p>
-        <ul class="skills-list">
-          <li><span>01</span> Recherche d’inspiration & moodboards</li>
-          <li><span>02</span> Dessin de mode & croquis techniques</li>
-          <li><span>03</span> Patronage & modélisme</li>
-          <li><span>04</span> Choix des matières & coloris</li>
-          <li><span>05</span> Prototypage & suivi de confection</li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="contact section" id="contact">
-      <div class="section-label">04 — CONTACT</div>
-      <div class="contact-content">
-        <p class="eyebrow">UNE IDÉE À CONCRÉTISER ?</p>
-        <h2>Créons quelque<br>chose <em>d’unique.</em></h2>
-        <p>Pour une collaboration, une demande d’information ou pour découvrir mon travail, contactez-moi.</p>
-        <a class="button button-dark" href="mailto:contact@atelierelise.com">Me contacter <span>↗</span></a>
-      </div>
-      <div class="contact-side">
-        <p>EMAIL</p><a href="mailto:contact@atelierelise.com">contact@atelierelise.com</a>
-        <p>INSTAGRAM</p><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">@atelier.elise</a>
-        <p>LOCALISATION</p><span>Votre ville, Pays</span>
-      </div>
-    </section>
-  </main>
+    </div>
 
-  <footer class="footer">
-    <a class="brand" href="#accueil">ATELIER <span>ÉLISE</span></a>
-    <p>© <span id="year"></span> — Portfolio Stylisme & Modélisme</p>
-    <a href="#accueil">Retour en haut ↑</a>
-  </footer>
+    <div class="side-note">
+      EST. 2026
+      <br><br>
+      01—04
+    </div>
+
+  </section>
+
+
+  <!-- COLLECTIONS -->
+
+  <section class="work section" id="work">
+
+    <div class="index">
+      02 <span>— SÉLECTION DE TRAVAUX</span>
+    </div>
+
+    <div class="work-heading">
+
+      <h2>
+        Selected<br>
+        <em>works.</em>
+      </h2>
+
+      <p>
+        FRAGMENTS DE COLLECTIONS,
+        <br>
+        RECHERCHES ET EXPÉRIMENTATIONS.
+      </p>
+
+    </div>
+
+    <div class="work-grid">
+
+      <article class="card card-a">
+
+        <div class="photo tall">
+
+          <img
+            src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1100&q=90"
+            alt="Création couture">
+
+          <b>01</b>
+
+        </div>
+
+        <div class="caption">
+
+          <div>
+            <small>COLLECTION / 2026</small>
+            <h3>Soft Structure</h3>
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+      </article>
+
+
+      <article class="card card-b">
+
+        <div class="photo">
+
+          <img
+            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=90"
+            alt="Silhouette de mode">
+
+          <b>02</b>
+
+        </div>
+
+        <div class="caption">
+
+          <div>
+            <small>RECHERCHE / SILHOUETTES</small>
+            <h3>Urban Poetry</h3>
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+      </article>
+
+
+      <article class="card card-c">
+
+        <div class="photo">
+
+          <img
+            src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1000&q=90"
+            alt="Détail textile">
+
+          <b>03</b>
+
+        </div>
+
+        <div class="caption">
+
+          <div>
+            <small>MATIÈRES / TEXTURES</small>
+            <h3>Touch & Trace</h3>
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <p class="hint">
+      LES IMAGES ET LES TITRES SONT DES EXEMPLES —
+      REMPLACEZ-LES PAR VOS PROPRES PROJETS.
+    </p>
+
+  </section>
+
+
+  <!-- PROCESSUS CRÉATIF -->
+
+  <section class="process section" id="process">
+
+    <div class="index">
+      03 <span>— PROCESSUS CRÉATIF</span>
+    </div>
+
+    <div class="process-grid">
+
+      <div>
+
+        <small class="red">DU CONCEPT AU VÊTEMENT</small>
+
+        <h2>
+          Made with<br>
+          <em>intention.</em>
+        </h2>
+
+        <div class="atelier">
+
+          <img
+            src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1000&q=85"
+            alt="Atelier créatif">
+
+        </div>
+
+      </div>
+
+
+      <div class="steps">
+
+        <p class="process-intro">
+          Chaque étape est une exploration :
+          observer, dessiner, construire, ajuster et révéler.
+        </p>
+
+        <div class="step">
+
+          <b>01</b>
+
+          <div>
+            <h3>Inspiration & recherche</h3>
+            <p>
+              Moodboards, références artistiques,
+              tendances et univers visuel.
+            </p>
+          </div>
+
+          <span>＋</span>
+
+        </div>
+
+
+        <div class="step">
+
+          <b>02</b>
+
+          <div>
+            <h3>Dessin & conception</h3>
+            <p>
+              Croquis de mode, détails,
+              volumes et dessins techniques.
+            </p>
+          </div>
+
+          <span>＋</span>
+
+        </div>
+
+
+        <div class="step">
+
+          <b>03</b>
+
+          <div>
+            <h3>Patronage & modélisme</h3>
+            <p>
+              Construction des patrons,
+              volumes et ajustement des coupes.
+            </p>
+          </div>
+
+          <span>＋</span>
+
+        </div>
+
+
+        <div class="step">
+
+          <b>04</b>
+
+          <div>
+            <h3>Prototypage & finition</h3>
+            <p>
+              Choix des matières, essayages,
+              confection et finitions.
+            </p>
+          </div>
+
+          <span>＋</span>
+
+        </div>
+
+
+        <div class="tools">
+
+          OUTILS & SAVOIR-FAIRE
+
+          <p>
+            ILLUSTRATION · PATRONAGE · DRAPING ·
+            TEXTILE · CONFECTION
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact section" id="contact">
+
+    <div class="contact-top">
+      <span>04 — CONTACT</span>
+      <span>UN PROJET EN TÊTE ?</span>
+    </div>
+
+    <h2>
+      Let's make<br>
+      <em>something</em><br>
+      beautiful<span>.</span>
+    </h2>
+
+    <div class="contact-bottom">
+
+      <p>
+        Ouvert(e) aux collaborations,
+        projets créatifs et nouvelles rencontres.
+      </p>
+
+      <a href="mailto:contact@exemple.com">
+        ÉCRIVEZ-MOI ↗
+      </a>
+
+    </div>
+
+    <div class="contact-links">
+
+      <a href="mailto:contact@exemple.com">
+        CONTACT@EXEMPLE.COM
+      </a>
+
+      <a href="https://www.instagram.com/"
+         target="_blank"
+         rel="noreferrer">
+        INSTAGRAM ↗
+      </a>
+
+      <span>VOTRE VILLE, PAYS</span>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <a class="logo" href="#home">S<span>/</span>08</a>
+
+  <span>
+    © <span id="year"></span> — STYLISME & MODÉLISME
+  </span>
+
+  <a href="#home">RETOUR EN HAUT ↑</a>
+
+</footer>
+
 </body>
 </html>
